@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Assinaturas</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      rel="icon"
+      href="https://solucaut.com.br/assinatura/img/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="content">
+        <header>
+          <div class="header_container">
+            <img src="./assets/imgs/logo.png" alt="Logo" width="60%" />
+          </div>
+        </header>
+        <div class="forms">
+          <form>
+            <div class="form-input" >
+              <p>Nome:</p>
+              <input type="text" id="nome" class="input-text" />
+            </div>
+            <div class="form-input">
+              <p>Sobrenome:</p>
+              <input type="text" id="sobrenome" class="input-text" />
+            </div>
+            <div class="form-input" id="celular" >
+              <p>PA:</p>
+              <select id="PA" class="input_select">
+                <option value="" selected disabled></option>
+                <option value="Matriz">Matriz</option>
+                <option value="01">PA01</option>
+                <option value="02">PA02</option>
+                <option value="03">PA03</option>
+                <option value="04">PA04</option>
+                <option value="05">PA05</option>
+                <option value="06">PA06</option>
+                <option value="07">PA07</option>
+                <option value="08">PA08</option>
+                <option value="09">PA09</option>
+                <option value="10">PA10</option>
+                <option value="11">PA11</option>
+                <option value="12">PA12</option>
+                <option value="13">PA13</option>
+                <option value="14">PA14</option>
+                <option value="15">PA15</option>
+              </select>
+            </div>
+            <div class="form-input">
+              <p>Cargo:</p>
+              <select id="cargos" class="input_select">
+                <option value="" selected disabled>Selecione um cargo</option>
+              </select>
+            </div>
+            <div class="form-input">
+              <p>Unidade:</p>
+              <select id="unidade" class="input_select">
+                <option value="" selected disabled>
+                  Selecione uma unidade
+                </option>
+              </select>
+            </div>
+
+            <div class="form-input" id="Certificado">
+              certificados
+              <div class="checkbox-container">
+                <label >
+                  <input type="checkbox" name="certificados" class="checkbox" value="cert1"/>
+                  CPA10</label
+                ><br/>
+                <label>
+                  <input type="checkbox" name="certificados" class="checkbox" value="cert2"/>
+                  CPA20</label
+                ><br/>
+                <label
+                  ><input type="checkbox" name="certificados" class="checkbox" value="cert3"/>
+                  CEA</label
+                ><br/>
+                <label
+                  ><input type="checkbox" name="certificados" class="checkbox" value="cert4"/>
+                  CFG</label
+                ><br/>
+                <label 
+                  ><input type="checkbox" name="certificados" class="checkbox" value="cert5"/>
+                  CGE</label
+                ><br />
+                <label
+                  ><input type="checkbox" name="certificados" class="checkbox" value="cert6"/>
+                  CGO </label
+                ><br />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="assinatura-wrapper">
+          <div class="assinatura-div" id="capture">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding-left: 20px; white-space: nowrap">
+                  <h3 style="margin: 0px; font-size: 18px; white-space: nowrap">
+                    <span id="nome-assinatura">Nome Sobrenome</span>
+                  </h3>
+                  <p
+                    style="
+                      margin: 0px;
+                      font-size: 14px;
+                      line-height: 22px;
+                      white-space: nowrap;
+                    "
+                  >
+                    <span id="cargo-assinatura">Cargo na empresa</span><br />
+                    <span id="unidade-assinatura">Unidade na empresa</span>
+                  </p>
+                </td>
+                <td
+                  style="
+                    padding-left: 10px;
+                    text-decoration: none;
+                    color: #000000;
+                    font-size: 12px;
+                  "
+                >
+                  <table id="certificatesTable">
+                    <tr height="25" style="vertical-align: middle">
+                      <td
+                        width="0.2px"
+                        height="40px"
+                        style="
+                          vertical-align: middle;
+                          background-color: rgb(0, 162, 68);
+                        "
+                      ></td>
+                    </tr>
+                  </table>
+                </td>
+
+                <td
+                  style="text-decoration: none; color: #000000; font-size: 12px"
+                >
+                  <table>
+                    <tr id="certificatesRow"></tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td
+                  style="
+                    padding-left: 18px;
+                    white-space: nowrap;
+                    margin-top: 20px;
+                  "
+                >
+                  <img
+                    id="certImage"
+                    src="./assets/imgs/gptw.png"
+                    alt=""
+                    width="360px"
+                  />
+                </td>
+              </tr>
+            </table>
+            <table style="padding-left: 20px; white-space: nowrap">
+              <tr height="25" style="vertical-align: middle">
+                <td width="30" style="vertical-align: middle">
+                  <img
+                    src="http://www.credivale.org.br/Arquivos/linkexterno/assinatura/phone-icon.png"
+                    alt="mobilePhone"
+                    width="13"
+                    class="contact-info__ContactLabelIcon-sc-mmkjr6-0 gPPCBO"
+                    style="display: block; background-color: rgb(0, 162, 68)"
+                  />
+                </td>
+                <td style="vertical-align: middle">
+                  <a
+                    id="celular-assinatura"
+                    href="https://wa.me/5599999999999"
+                    style="
+                      text-decoration: none;
+                      color: #000000;
+                      font-size: 14px;
+                      vertical-align: middle;
+                      white-space: nowrap;
+                    "
+                  ></a>
+                </td>
+              </tr>
+              <tr height="25" style="vertical-align: middle">
+                <td width="30" style="vertical-align: middle">
+                  <img
+                    src="http://www.credivale.org.br/Arquivos/linkexterno/assinatura/email-icon.png"
+                    alt="email"
+                    width="14"
+                    class="contact-info__ContactLabelIcon-sc-mmkjr6-0 gPPCBO"
+                    style="display: block; background-color: rgb(0, 162, 68)"
+                  />
+                </td>
+                <td>
+                  <a
+                    id="email-assinatura"
+                    style="
+                      text-decoration: none;
+                      color: #000000;
+                      font-size: 14px;
+                      vertical-align: middle;
+                      white-space: nowrap;
+                    "
+                  ></a>
+                </td>
+              </tr>
+              <tr height="25" style="vertical-align: middle">
+                <td width="30" style="vertical-align: middle">
+                  <img
+                    src="http://www.credivale.org.br/Arquivos/linkexterno/assinatura/address-icon.png"
+                    alt="email"
+                    width="14"
+                    class="contact-info__ContactLabelIcon-sc-mmkjr6-0 gPPCBO"
+                    style="display: block; background-color: rgb(0, 162, 68)"
+                  />
+                </td>
+                <td>
+                  <a
+                    id="localidade-assinatura"
+                    style="
+                      text-decoration: none;
+                      color: #000000;
+                      font-size: 14px;
+                      vertical-align: middle;
+                      white-space: nowrap;
+                    "
+                  ></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="center-button">
+          <button type="submit" id="btn-copiar">
+            <button onclick="takeScreenshot()" type="submit" id="btn-copiar">
+              <h2>teste</h2>
+            </button>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      function takeScreenshot() {
+        html2canvas(document.querySelector("#capture")).then((canvas) => {
+          document.body.appendChild(canvas);
+        });
+      }
+    </script>
+  </body>
+</html>
