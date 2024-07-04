@@ -21,22 +21,22 @@ const paPhones = {
 };
 
 const pa = {
-  "Matriz": "18 2101 5478",
-  "01": "Presidente Venceslau",
-  "02": "Rancharia",
-  "03": "Bataguassu",
-  "04": "Nova Andradina",
-  "05": "Centro",
-  "06": "Naviraí",
-  "07": "Três Lagoas",
-  "08": "Cel Marcondes",
-  "09": "Regente Feijó",
-  "10": "Alvares Machado",
-  "11": "Presidente Epitácio",
-  "12": "Rio Preto",
-  "13": "Araçatuba",
-  "14": "Andradina",
-  "15": "Penápolis",
+  "Matriz":"Presidente Prudente - Reverendo Coriolano, 2004, 19015-070",
+  "01": "Presidente Venceslau - Avenida Dom Pedro II, 607, 19400-000",
+  "02": "Rancharia - Avenida Dom Pedro II, 1144, 19600-000",
+  "03": "Bataguassu - Avenida Campo Grande, 55, 79780-000",
+  "04": "Nova Andradina - Avenida Joaquim Antonio de Moura Andrade, 290/300, 79750-000",
+  "05": "Presidente Prudente - Avenida Washington Luiz, 235, 19010-090 ",
+  "06": "Naviraí - Avenida Dourados, 147, 79950-000",
+  "07": "Três Lagoas - Avenida Filinto Muller, 195, 79600-001",
+  "08": "Presidente Prudente - Avenida Cel José Soares Marcondes, 2792, 19013-050",
+  "09": "Regente Feijó - Rua Jose Bonifacio, 545, 19570-000",
+  "10": "Alvares Machado - Rua Presidente Roosevelt, 19/6, 19160-000",
+  "11": "Presidente Epitácio - Avenida Getúlio Vargas, 9 complemento 03, 19470-000",
+  "12": "Rio Preto - Avenida Bady Bassit, 4500, 15025-000 ",
+  "13": "Araçatuba - Rua Tabajaras, 684, 16010-390",
+  "14": "Andradina - Avenida Guanabara, 2919, 16901-100",
+  "15": "Penápolis - Rua Fernando Ribeiro de Barros, 205, 16300-031",
 };
 
 
@@ -181,11 +181,11 @@ function updateEmail(paValue) {
 
 function updateLocalidade(paValue) {
   let email = pa[paValue] || "";
-  if (paValue === "Matriz") {
+ /* if (paValue === "Matriz") {
     const unidadeSelect = document.getElementById('unidade');
     const unidadeValue = unidadeSelect.value;
     email = emailArea[unidadeValue] || "";
-  }
+  }*/
   document.getElementById('localidade-assinatura').innerText = email;
 }
 

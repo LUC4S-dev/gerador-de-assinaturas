@@ -10,6 +10,9 @@
       href="https://solucaut.com.br/assinatura/img/favicon.png"
       type="image/png"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="app">
@@ -67,7 +70,7 @@
             </div>
 
             <div class="form-input" id="Certificado">
-              certificados
+              Certificados
               <div class="checkbox-container">
                 <label >
                   <input type="checkbox" name="certificados" class="checkbox" value="cert1"/>
@@ -91,7 +94,7 @@
                 ><br />
                 <label
                   ><input type="checkbox" name="certificados" class="checkbox" value="cert6"/>
-                  CGO </label
+                  CGA </label
                 ><br />
               </div>
             </div>
@@ -103,7 +106,7 @@
               <tr>
                 <td style="padding-left: 20px; white-space: nowrap">
                   <h3 style="margin: 0px; font-size: 18px; white-space: nowrap">
-                    <span id="nome-assinatura">Nome Sobrenome</span>
+                    <span id="nome-assinatura" style="font-weight: 900";>Nome Sobrenome</span>
                   </h3>
                   <p
                     style="
@@ -113,8 +116,8 @@
                       white-space: nowrap;
                     "
                   >
-                    <span id="cargo-assinatura">Cargo na empresa</span><br />
-                    <span id="unidade-assinatura">Unidade na empresa</span>
+                    <span id="cargo-assinatura"style="font-weight: 550">Cargo na empresa</span><br />
+                    <span id="unidade-assinatura"style="font-weight: 550">Unidade na empresa</span>
                   </p>
                 </td>
                 <td
@@ -123,6 +126,7 @@
                     text-decoration: none;
                     color: #000000;
                     font-size: 12px;
+                    
                   "
                 >
                   <table id="certificatesTable">
@@ -169,13 +173,7 @@
             <table style="padding-left: 20px; white-space: nowrap">
               <tr height="25" style="vertical-align: middle">
                 <td width="30" style="vertical-align: middle">
-                  <img
-                    src="http://www.credivale.org.br/Arquivos/linkexterno/assinatura/phone-icon.png"
-                    alt="mobilePhone"
-                    width="13"
-                    class="contact-info__ContactLabelIcon-sc-mmkjr6-0 gPPCBO"
-                    style="display: block; background-color: rgb(0, 162, 68)"
-                  />
+                  <i  class="fa-solid fa-phone" style="color: green;"></i> <!-- Telefone -->
                 </td>
                 <td style="vertical-align: middle">
                   <a
@@ -193,13 +191,7 @@
               </tr>
               <tr height="25" style="vertical-align: middle">
                 <td width="30" style="vertical-align: middle">
-                  <img
-                    src="http://www.credivale.org.br/Arquivos/linkexterno/assinatura/email-icon.png"
-                    alt="email"
-                    width="14"
-                    class="contact-info__ContactLabelIcon-sc-mmkjr6-0 gPPCBO"
-                    style="display: block; background-color: rgb(0, 162, 68)"
-                  />
+                  <i class="fa-solid fa-envelope-open-text" style="color: green;"></i> <!-- E-mail -->
                 </td>
                 <td>
                   <a
@@ -216,13 +208,7 @@
               </tr>
               <tr height="25" style="vertical-align: middle">
                 <td width="30" style="vertical-align: middle">
-                  <img
-                    src="http://www.credivale.org.br/Arquivos/linkexterno/assinatura/address-icon.png"
-                    alt="email"
-                    width="14"
-                    class="contact-info__ContactLabelIcon-sc-mmkjr6-0 gPPCBO"
-                    style="display: block; background-color: rgb(0, 162, 68)"
-                  />
+                  <i class="fa-solid fa-location-dot" style="color: green;"></i> <!-- Localidade-->
                 </td>
                 <td>
                   <a
@@ -243,7 +229,7 @@
         <div class="center-button">
           <button type="submit" id="btn-copiar">
             <button onclick="takeScreenshot()" type="submit" id="btn-copiar">
-              <h2>teste</h2>
+              <h2>Gerar Assinatura</h2>
             </button>
           </button>
         </div>
@@ -263,5 +249,7 @@
         });
       }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" 
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
